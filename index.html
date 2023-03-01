@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #f5f5dc52;
+            margin: 0;
+            padding: 0;
+        }
+        .formWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        form{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+        form div{
+            width: calc(50% - 16px);
+            margin-bottom: 16px;
+            margin-right: 16px;
+        }
+        form input, form textarea{
+            width: calc(100% - 72px);
+            padding: 10px 35px;
+            border: 1px solid #ffff00;
+            transition: all .3s ease;
+            border-radius: 6px;
+            background-color: white;
+        }
+        form h1{
+            width: 100%;
+            text-align: center;
+        }
+        form input:focus, form textarea:focus{
+            outline: 0;
+            border-color: #b0b000;
+        }
+        p{
+            margin: 0;
+            color: #d70000;
+            font-weight: bold;
+            margin-top: 6px;
+            font-size: 14px;
+            padding-left: 6px;
+        }
+    </style>
+    <div class="formWrapper">
+        <form>
+            <h1>Bizimlə əlaqə</h1>
+            <div>
+                <input type="text" placeholder="Adınız" class="firstname">
+                <p></p>
+            </div>
+            <div>
+                <input type="text" placeholder="Soyadınız" class="lastname">
+                <p></p>
+            </div>
+            <div>
+                <input type="text" placeholder="E-mail" class="email">
+                <p></p>
+            </div>
+            <div>
+                <input type="text"  placeholder="Nömrəniz" class="number">
+                <p></p>
+            </div>
+            <div style="width: calc(100% - 16px)">
+                <textarea rows="10"></textarea>
+                <p></p>
+            </div>
+            <input style="cursor: pointer; width: 200px;" type="submit" value="Göndər">
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
